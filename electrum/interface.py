@@ -590,7 +590,7 @@ class Interface(Logger):
     async def request_fee_estimates(self):
         from .simple_config import FEE_ETA_TARGETS
         from .bitcoin import COIN
-        while True:
+        while False:
             async with TaskGroup() as group:
                 fee_tasks = []
                 for i in FEE_ETA_TARGETS:
